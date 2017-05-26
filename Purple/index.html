@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Heartworthy Creative</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Heartworthy Creative">
+	<link rel="shortcut icon" type="image/png" href="Images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<script src="script.js"></script>
+</head>
+<body>
+	<div id="home">
+		<div class="container">
+			<div class="col-xs-6 page">
+				<h1>1/4</h1>
+				<h2><img src="Images/line.jpg" alt="">home</h2>
+			</div>
+			<div class="col-xs-6 menu">
+				<div class="navigationicon">
+				  	<input type="checkbox" id="spinner-form2">
+				  	<label for="spinner-form2" class="spinner-spin2">
+				    	<div class="line diagonal part-1"></div>
+				    	<div class="line horizontal"></div>
+				    	<div class="line diagonal part-2"></div>
+				  	</label>
+				</div>
+				<div id="navigationlinks">
+					<ul class="list-unstyled">
+						<li><a href="#home">HOME</a></li>
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="#portfolio">PORTFOLIO</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="middle">
+				<div class="name">
+					<h2>Heartworthy</h2>
+					<h3>Creative Agency</h3>
+				</div>
+				<div class="context">
+					<img src="Images/line.jpg" alt="">
+					<h2>logotype</h2>
+				</div>
+			</div>
+			<!-- div class="scroll">
+				<a href="#about"><h1>Learn more</h1></a>
+			</div-->
+		</div>
+	</div>
+	<div id="about">
+		<div class="bgtitle">
+			<h1>About</h1>
+		</div>
+		<div class="image">
+			<img src="Images/about.png" alt="">
+		</div>
+		<div class="container">
+			<div class="col-md-12 page">
+				<h1>2/4</h1>
+				<h2><img src="Images/line.jpg" alt="">about</h2>
+			</div>
+			<div class="col-md-12 name">
+				<h1><img src="Images/line2.jpg" alt="">Ana Rostova</h1>
+				<h2>Moscow,Russia</h2>
+			</div>
+			<div class="col-md-12 desc">
+				<p>
+					Vim causae cetero alienum cu, his sint zril definitiones id. Qui cu agam mundi scaevola, mel etiam feugait scribentur no. His te fastidii quaestio similique, per facer ocurreret at, id assum munere eum. Ei posidonium temporibus nam, iuvaret aliquid mel ad..
+				</p>
+			</div>
+			<div class="col-md-12 social">
+				<ul>
+					<li><a href="https://creativemarket.com/UrosSimic">TWITTER</a></li>
+					<li>/</li>
+					<li><a href="https://creativemarket.com/UrosSimic">FACEBOOK</a></li>
+					<li>/</li>
+					<li><a href="https://creativemarket.com/UrosSimic">MAIL</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="portfolio">
+		<div class="bgtitle">
+			<h1>Portfolio</h1>
+		</div>
+		<div class="container">
+			<div class="col-md-12 page">
+				<h1>3/4</h1>
+				<h2><img src="Images/line.jpg" alt="">portfolio</h2>
+			</div>
+			<div class="col-md-12"> <!-- PORTF CHANGE BUTTONS -->
+				<div class="change">
+					<ul>
+						<li><a alt="Previous" onClick="prev()">PREV</a></li>
+						<li><a alt="Next" onClick="next()">NEXT</a></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="posts PortSwap" id="swap0"> <!-- PORTF PAGE 1 -->
+				<div class="col-md-6 1">
+					<a href="https://www.behance.net/aleksannikolic">
+						<div class="post1">
+							<img src="Images/post1.jpg" alt="post1">
+							<h1>web design</h1>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6 1and2">
+					<a href="https://www.behance.net/aleksannikolic">
+						<div class="post2">
+							<img src="Images/post2.jpg" alt="post2">
+							<h1>logo design</h1>
+						</div>
+					</a>
+					<a href="https://www.behance.net/aleksannikolic">
+						<div class="post3">
+							<img src="Images/post3.jpg" alt="post3">
+							<h1>branding</h1>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="posts PortSwap" id="swap1"> <!-- PORTF PAGE 2 -->
+				<div class="col-md-6 4">
+					<a href="https://www.behance.net/aleksannikolic">
+						<div class="post1">
+							<img src="Images/post4.jpg" alt="post1">
+							<h1>photography</h1>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6 5and6">
+					<a href="https://www.behance.net/aleksannikolic">
+						<div class="post2">
+							<img src="Images/post5.jpg" alt="post2">
+							<h1>web design</h1>
+						</div>
+					</a>
+					<a href="https://www.behance.net/aleksannikolic">
+						<div class="post3">
+							<img src="Images/post6.jpg" alt="post3">
+							<h1>programming</h1>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="posts PortSwap" id="swap2"> <!-- PORTF PAGE 3 -->
+				<div class="col-md-6 7">
+					<a href="https://www.behance.net/aleksannikolic">
+						<div class="post1">
+							<img src="Images/post7.jpg" alt="post1">
+							<h1>web design</h1>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6 8and9">
+					<a href="https://www.behance.net/aleksannikolic">
+						<div class="post2">
+							<img src="Images/post8.jpg" alt="post2">
+							<h1>branding</h1>
+						</div>
+					</a>
+					<a href="https://www.behance.net/aleksannikolic">
+						<div class="post3">
+							<img src="Images/post9.jpg" alt="post3">
+							<h1>photography</h1>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="more">
+					<h2>More on</h2>
+					<ul>
+						<li><img src="Images/line3.jpg" alt=""></li>
+						<li><a href="https://www.behance.net/aleksannikolic">BEHANCE</a></li>
+						<li><a href="https://www.behance.net/aleksannikolic">DRIBBBLE</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="contact">
+		<div class="bgtitle">
+			<h1>Contact</h1>
+		</div>
+		<div class="container">
+			<div class="col-md-12 page">
+				<h1>4/4</h1>
+				<h2><img src="Images/line.jpg" alt="">contact</h2>
+			</div>
+			<div class="col-md-12 desc">
+				<p>
+					Erat incorrupte nam ut, ex noluisse expetendis mei.
+					Sea ex option recteque deseruisse, enim cibo definitionem ius no
+					Mei tritani fastidii cu.
+				</p>
+			</div>
+			<div class="col-md-6 form">
+				<form action="">
+					<input type="text" name="mail" placeholder="mail">
+					<input type="text" name="name" placeholder="name">
+					<textarea name="message" placeholder="message"></textarea>
+					<button type="submit">SEND IT</button>
+				</form>
+			</div>
+			<div class="col-md-6 address">
+				<h3>
+					+123 777 999 <br>
+					Vladimir Punin Street 55 <br>
+					V456P <br>
+					Moscow, Russia
+				</h3>
+				<div class="social">
+					<ul>
+						<li><a href="https://creativemarket.com/UrosSimic">INSTAGRAM</a></li>
+						<li><a href="https://creativemarket.com/UrosSimic">FACEBOOK</a></li>
+						<li><a href="https://creativemarket.com/UrosSimic">MAIL</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

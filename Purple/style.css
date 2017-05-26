@@ -1,0 +1,721 @@
+body {
+	background-color: #7800ff!important;
+}
+
+body:not(:root:root) { /* ONLY SAFARI */
+	background-color: #6534ff!important;
+}
+
+@font-face {
+	font-family: OpenSans_Light;
+	src: url("Fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+	font-family: OpenSans_LightItalic;
+	src: url("Fonts/OpenSans-LightItalic.ttf");
+}
+
+@font-face {
+	font-family: OpenSans_Regular;
+	src: url("Fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: OpenSans_Semibold;
+	src: url("Fonts/OpenSans-Semibold.ttf");
+}
+
+@font-face {
+ 	font-family: OpenSans_Bold;
+	src: url("Fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+	font-family: Playfair;
+	src: url("Fonts/PlayfairDisplay-Bold.otf");
+}
+
+@media screen and (min-color-index:0)
+and(-webkit-min-device-pixel-ratio:0) { @media
+{
+    @font-face {
+ 		font-family: OpenSans_Regular;
+		src: url("Fonts/OpenSans-Bold.ttf");
+	}
+}} /* ONLY FOR SAFARI */
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0!important;
+}
+
+a, a:hover, a:active {
+	text-decoration: none !important;
+}
+
+::-webkit-input-placeholder {
+	opacity: 1 !important;
+	color: white;
+}
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+	padding: 0!important;
+	margin: 0!important;
+}
+
+.page h1 {
+	font-family: OpenSans_Light;
+	font-size: 50pt;
+	letter-spacing: 6px;
+	color: white;
+}
+
+.page h2 {
+	font-family: OpenSans_Regular;
+	font-size: 12pt;
+	letter-spacing: 3px;
+	color: white;
+	opacity: 0.5;
+}
+
+.page h2 img {
+	margin-right: 20px;
+}
+
+.bgtitle {
+	position: absolute;
+}
+
+.bgtitle h1 {
+	font-family: Playfair;
+	font-size: 200pt;
+	letter-spacing: 3px;
+	color: grey;
+	opacity: 0.03;
+}
+
+/* HOME -------------------------------------------------------------*/
+
+#home {
+	padding: 100px 0;
+	background-image: url(Images/logo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 1050px;
+	z-index: 1;
+}
+
+#home .menu .navigationicon * {
+  	transition: all 0.3s;
+  	-webkit-transition: all 0.3s;
+  	box-sizing: border-box;
+}
+
+#home .menu .navigationicon {
+ 	position: fixed;
+ 	float: left;
+  	height: 50px;
+  	width: 50px;
+  	margin-left: 520px;
+  	z-index: 999;
+  	background-color: white;
+  	padding: 0 10px;
+}
+
+#home .menu .navigationicon input[type=checkbox] {
+  	display: none;
+}
+
+#home .menu .navigationicon label {
+  	cursor: pointer;
+  	position: absolute;
+  	z-index: 99;
+  	height: 100%;
+  	width: 100%;
+  	top: 10px;
+  	left: 0;
+  	margin-top: 5px;
+}
+
+#home .menu .navigationicon .line {
+  	position: absolute;
+  	height: 3px;
+  	width: 100%;
+  	background-color: #000;
+  	width: 30px;
+  	margin-left: 10px;
+}
+
+#home .menu .navigationicon .diagonal.part-1 {
+  	position: relative;
+  	float: left;
+}
+
+#home .menu .navigationicon .horizontal {
+  	position: relative;
+  	float: left;
+  	margin-top: 6px;
+}
+
+#home .menu .navigationicon .diagonal.part-2 {
+  	position: relative;
+  	float: left;
+  	margin-top: 5px;
+}
+
+#home .menu .navigationicon input[type=checkbox]:checked ~ .spinner-spin2 > .horizontal {
+  	opacity: 0;
+}
+
+#home .menu .navigationicon input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-1 {
+  	transform: rotate(135deg);
+  	-webkit-transform: rotate(135deg);
+  	margin-top: 10px;
+}
+
+#home .menu .navigationicon input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-2 {
+  	transform: rotate(-135deg);
+  	-webkit-transform: rotate(-135deg);
+  	margin-top: -12px;
+}
+
+#home .menu #navigationlinks {
+	position: fixed;
+	float: left;
+	text-align: right;
+  	display: none;
+  	margin-top: 75px;
+  	margin-left: 33.5%;
+  	z-index: 999;
+  	transition: all 0.2s;
+  	-webkit-transition: all 0.2s;
+}
+
+#home .menu #navigationlinks li {
+	margin-top: 5px;
+}
+
+#home .menu #navigationlinks a {
+	font-family: OpenSans_Regular;
+	color: white;
+	text-decoration: none;
+	font-size: 10pt;
+	letter-spacing: 2px;
+  	transition: all 0.2s;
+  	-webkit-transition: all 0.2s;
+}
+
+#home .menu #navigationlinks a:hover {
+	opacity: 0.7;
+}
+
+#home .middle {
+	border: 4px solid white;
+	position: absolute;
+	padding: 20px;
+	top: 100px;
+	width: 500px;
+	height: 800px;
+	margin-left: 320px;
+}
+
+#home .middle .name h2 {
+	font-family: OpenSans_Light;
+	font-size: 12pt;
+	letter-spacing: 2px;
+	color: white;
+}
+
+#home .middle .name h3 {
+	font-family: OpenSans_Regular;
+	font-size: 9pt;
+	letter-spacing: 1px;
+	color: white;
+	opacity: 0.6;
+	margin-top: 7px!important;
+}
+
+#home .middle .context {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 240px;
+	margin-left: 480px;
+}
+
+#home .middle .context h2 {
+	font-family: OpenSans_Regular;
+	font-size: 12pt;
+	letter-spacing: 2px;
+	color: white;
+	margin-left: 50px!important;
+}
+
+#home .scroll {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 875px;
+	margin-left: 200px;
+	margin-bottom: 100px!important;
+}
+
+#home .scroll h1 {
+	font-family: OpenSans_Regular;
+	font-size: 44pt;
+	letter-spacing: 7px;
+	color: white;
+	text-decoration: line-through;
+  	transition: all 0.2s;
+  	-webkit-transition: all 0.2s;
+}
+
+#home .scroll h1:hover {
+	opacity: 0.7;
+}
+
+/* ABOUT -------------------------------------------------------------*/
+
+#about {
+	background-color: #38bef9;
+	padding: 100px 0;
+	height: 1330px;
+	z-index: 2;
+}
+
+#about:not(:root:root) { /* ONLY SAFARI */
+	background-color: #62bcfa!important;
+}
+
+#about .image {
+	position: absolute;
+	width: 100%;
+	padding-left: 10%;
+	margin-top: 350px;
+}
+
+#about .image img {
+	mix-blend-mode: overlay;
+	opacity: 0.7;
+	z-index: 2;
+}
+
+#about .name {
+	margin-top: 250px!important;
+}
+
+#about .name h1 {
+	font-family: Playfair;
+	font-size: 60pt;
+	letter-spacing: 3px;
+	color: white;
+}
+
+#about .name h1 img {
+	margin-right: 40px;
+}
+
+#about .name h2 {
+	font-family: Playfair;
+	font-size: 17pt;
+	letter-spacing: 2px;
+	color: #7545f0;
+	margin-left: 115px!important;
+}
+
+#about .desc {
+	margin-top: 175px!important;
+}
+
+#about .desc p {
+	font-family: OpenSans_Regular;
+	font-size: 10pt;
+	line-height: 18pt;
+	letter-spacing: 1px;
+	color: white;
+	text-align: right;
+	float: right;
+	opacity: 0.6;
+	max-width: 600px;
+}
+
+#about .social {
+	margin-top: 75px!important;
+}
+
+#about .social ul {
+	overflow: auto;
+	float: right;
+	text-align: right;
+}
+
+#about .social ul li {
+	font-family: OpenSans_Semibold;
+	font-size: 13pt;
+	color: white;
+	list-style-type: none;
+	float: left;
+	margin-left: 20px;
+}
+
+#about .social ul li a {
+	font-family: OpenSans_Semibold;
+	font-size: 13pt;
+	letter-spacing: 1px;
+	color: white;
+}
+
+#about .social ul li a:hover {
+	text-decoration: line-through!important;
+}
+
+/* PORTFOLIO -------------------------------------------------------------*/
+
+#portfolio {
+	background-color: #fccdd3;
+	padding: 100px 0;
+	z-index: 3;
+}
+
+#portfolio .change {
+	position: absolute;
+	top: 190px;
+	right: 0;
+	z-index: 998;
+}
+
+#portfolio .change ul {
+	overflow: auto;
+	float: right;
+	text-align: right;
+	padding: 0!important;
+}
+
+#portfolio .change ul li {
+	list-style-type: none;
+	float: left;
+	margin-left: 20px;
+}
+
+#portfolio .change ul li a {
+	font-family: OpenSans_Bold;
+	font-size: 19pt;
+	letter-spacing: 1px;
+	color: #544043;
+}
+
+#portfolio .change ul li a:hover {
+	text-decoration: line-through!important;
+	cursor: pointer;
+}
+
+#portfolio .posts {
+	margin-top: 300px;
+}
+
+#portfolio .posts img {
+	width: 100%;
+	height: 100%;
+	opacity: 0.35;
+  	transition: all 0.2s;
+  	-webkit-transition: all 0.2s;
+}
+
+#portfolio .posts img:hover {
+	opacity: 0.6;
+}
+
+#portfolio .posts h1 {
+	font-family: OpenSans_Bold;
+	font-size: 14pt;
+	letter-spacing: 3px;
+	color: #544043;
+	position: absolute;
+	top: 0;
+	padding: 25px;
+}
+
+#portfolio .posts .post1 {
+	width: 100%;
+	height: 1030px;
+}
+
+#portfolio .posts .post2 {
+	width: 100%;
+	height: 490px;
+}
+
+#portfolio .posts .post3 h1 {
+	top: 490px;
+}
+
+#portfolio .more {
+	position: absolute;
+	top: -270px;
+}
+
+#portfolio .more h2 {
+	font-family: Playfair;
+	font-size: 35pt;
+	letter-spacing: 2px;
+	color: #ffe2e6;
+}
+
+#portfolio .more ul {
+	overflow: auto;
+	float: left;
+	text-align: left;
+	margin-top: 15px;
+	padding: 0!important;
+}
+
+#portfolio .more ul li {
+	list-style-type: none;
+	float: left;
+	margin-right: 20px;
+}
+
+#portfolio .more ul li img {
+	margin-top: 12.5px;
+	opacity: 0.35;
+}
+
+#portfolio .more ul li img:hover {
+	opacity: 0.35;
+}
+
+#portfolio .more ul li a {
+	font-family: OpenSans_Bold;
+	font-size: 19pt;
+	letter-spacing: 1px;
+	color: white;
+	opacity: 0.35;
+  	transition: all 0.2s;
+  	-webkit-transition: all 0.2s;
+}
+
+#portfolio .more ul li a:hover {
+	text-decoration: line-through!important;
+	opacity: 1;
+}
+
+/* CONTACT -------------------------------------------------------------*/
+
+#contact {
+	background-color: #bbc4ef;
+	padding: 100px 0 200px 0;
+	z-index: 4;
+}
+
+#contact .desc {
+	margin-top: 200px!important;
+}
+
+#contact .desc p {
+	font-family: OpenSans_Regular;
+	font-size: 10pt;
+	letter-spacing: 1px;
+	color: white;
+	max-width: 470px;
+	opacity: 0.7;
+}
+
+#contact .form {
+	margin-top: 75px!important;
+}
+
+#contact .form input {
+	font-family: OpenSans_Regular;
+	font-size: 10pt;
+	color: white;
+	background: transparent;
+	border: 2px solid white;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 400px;
+	height: 70px;
+	margin-bottom: 40px;
+	opacity: 0.7;
+}
+
+#contact .form textarea {
+	font-family: OpenSans_Regular;
+	font-size: 10pt;
+	color: white;
+	background: transparent;
+	border: 2px solid white;
+	padding: 20px;
+	width: 400px;
+	height: 250px;
+	opacity: 0.7;
+}
+
+#contact .form button {
+	font-family: OpenSans_Bold;
+	font-size: 19pt;
+	letter-spacing: 1px;
+	color: white;
+	background: transparent;
+	border: 0;
+	text-align: left;
+	margin-right: 200px;
+	margin-top: 40px;
+}
+
+#contact .form button:hover {
+	text-decoration: line-through;
+}
+
+#contact .address {
+	margin-top: 75px!important;
+	height: 550px;
+}
+
+#contact .address h3 {
+	font-family: OpenSans_Regular;
+	font-size: 13pt;
+	letter-spacing: 1px;
+	line-height: 18pt;
+	color: white;
+	text-align: right;
+	float: right;
+}
+
+#contact .address .social {
+	position: absolute;
+	top: 95%;
+	bottom: 0;
+	right: 0;
+}
+
+#contact .address .social ul {
+	overflow: auto;
+	float: right;
+	text-align: right;
+}
+
+#contact .address .social ul li {
+	font-family: OpenSans_Semibold;
+	font-size: 13pt;
+	color: white;
+	list-style-type: none;
+	float: left;
+	margin-left: 20px;
+}
+
+#contact .address .social ul li a {
+	font-family: OpenSans_Semibold;
+	font-size: 13pt;
+	letter-spacing: 1px;
+	color: white;
+}
+
+#contact .address .social ul li a:hover {
+	text-decoration: line-through!important;
+}
+
+/* RESPONSIVE -------------------------------------------------------------*/
+
+@media (max-width: 1199px) {
+	#home .middle {
+		margin-left: 235px;
+	}
+
+	#home .menu .navigationicon {
+		margin-left: 420px;
+	}
+
+	#about .image {
+		padding-left: 0;
+	}
+
+	#portfolio .more {
+		position: absolute;
+		top: -140px;
+	}
+	
+	#portfolio .more ul li a {
+		font-size: 16pt;
+	}
+}
+
+@media (max-width: 991px) {
+	#home .middle {
+		margin-left: 125px;
+	}
+
+	#home .menu .navigationicon {
+		margin-left: 310px;
+	}
+
+	#portfolio .posts .post1 {
+		width: 570px;
+		float: none;
+    	margin: 0 auto;
+	}
+
+	#portfolio .posts .post2 {
+		width: 570px;
+		float: none;
+    	margin: 0 auto;
+	}
+
+	#portfolio .posts .post3 {
+		width: 570px;
+		float: none;
+    	margin: 0 auto;
+	}
+
+	#portfolio .more {
+		position: static;
+		margin-top: 50px;
+	}
+
+	#contact .address {
+		height: auto;
+	}
+
+	#contact .address h3 {
+		text-align: left;
+		float: left;
+		width: 100%;
+		margin-bottom: 50px!important;
+	}
+
+	#contact .address .social {
+		position: initial;
+		top: auto;
+		right: auto;
+		bottom: auto;
+	}
+
+	#contact .address .social ul {
+		overflow: auto;
+		float: left;
+		text-align: left;
+		padding: 0;
+	}
+
+	#contact .address .social ul li {
+		margin-left: 0;
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 750px) {
+	#home .menu .navigationicon {
+		margin-left: 40%;
+	}
+
+	#home .middle {
+		margin-left: 15%;
+		max-width: 90%;
+	}
+}
+
+
