@@ -1,168 +1,191 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <title>Heartworthy Creative </title>
-        <!--Meta-->
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta property="og:title" content="Heartworthy Creative" />
-        <meta property="og:description" content="Heartworthy is a Creative Web Design Agency in Austin, TX" />
-        <meta property="og:url" content="HeartworthyCreative.com" />
-        <meta property="og:site_name" content="Heartworthy Creative" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Heartworthy Creative</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Heartworthy Creative">
+	<link rel="shortcut icon" type="image/png" href="Images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<script src="script.js"></script>
+</head>
+<body>
+<!--	<div id="home">
+		<div class="container">
+			<div class="col-xs-6 page">
+				<h1>1</h1>
+				<h2><img src="Images/line.jpg" alt="">home</h2>
+			</div>
+			<div class="col-xs-6 menu">
+				<div class="navigationicon">
+				  	<input type="checkbox" id="spinner-form2">
+				  	<label for="spinner-form2" class="spinner-spin2">
+				    	<div class="line diagonal part-1"></div>
+				    	<div class="line horizontal"></div>
+				    	<div class="line diagonal part-2"></div>
+				  	</label>
+				</div>
+				<div id="navigationlinks">
+					<ul class="list-unstyled">
+						<li><a href="#home">HOME</a></li>
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="#portfolio">PORTFOLIO</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="middle">
+				<div class="name">
+					<h2 style="color: #fff;">Heartworthy</h2>
+					<h3>Creative Agency</h3>
+				</div>
+			<div class="context">
+					<img src="Images/line.jpg" alt="">
+					<h2>logotype</h2>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<div id="about">
+		<div class="bgtitle">
+			<h1>About</h1>
+		</div>
+		<div class="image">
+			<!-- <img src="Images/about.png" alt=""> -->
+		</div>
+		<div class="container">
+			<div class="col-md-12 page">
+				<h1>1</h1>
+				<h2><img src="Images/line.jpg" alt="">About</h2>
+			</div>
+			<div class="col-md-12 name">
+				<h1><img src="Images/line2.jpg" alt="">Namaste Y'all</h1>
+				<!-- <h2>is based in Austin, TX</h2> -->
+			</div>
+			<div class="col-md-12 desc">
+				<p>
+					The light in me bows to and acknowledges the light inside of you. Your vision is unique. Your website and digital products will differentiate you from others. As an agency, we strive to make that happen.
+				</p>
+				<p>We’re an Austin, TX based digital agency, lovingly curating pixels for your maximum impact. All of our websites are coded with love, just for you and made for any device. We specialize in WordPress and custom sites. In addition, we offer branding packages in which we will work with you to hone your vision.
+				</p>
+			</div>
+			<div class="col-md-12 social">
+				<ul>
+					<li><a href="https://twitter.com/ifyouGitit" target="_blank">TWITTER</a></li>
+					<li>/</li>
+					<li><a href="https://github.com/christaclark" target="_blank">GITHUB</a></li>
+					<li>/</li>
+					<li><a href="mailto:christa@skunkworxlab.com" target="_blank">EMAIL</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="portfolio">
+		<div class="bgtitle">
+			<h1>Services</h1>
+		</div>
+		<div class="container">
+			<div class="col-md-12 page">
+				<h1>2</h1>
+				<h2><img src="Images/line.jpg" alt="">Our Services</h2>
+			</div>
+			<div class="col-md-12"> <!-- PORTF CHANGE BUTTONS -->
+				<div class="change">
+					<ul>
+						<li><a alt="Previous" onClick="prev()">PREV</a></li>
+						<li><a alt="Next" onClick="next()">NEXT</a></li>
+					</ul>
+				</div>
+		    </div>
+		    <div class="posts PortSwap" id="swap0"> <!-- PORTF PAGE 1 -->
+				<div class="col-md-6 1">
+						<div class="post1">
+							<img src="Images/post1.jpg" alt="post1">
+							<h1>web design</h1>
+						</div>
+				</div>
+				<div class="col-md-6 1and2">
+						<div class="post2">
+							<img src="Images/post2.jpg" alt="post2">
+							<h1>web development</h1>
+						</div>
+						<div class="post3">
+							<img src="Images/post3.jpg" alt="post3">
+							<h1>branding</h1>
+						</div>
+				</div>
+			</div>
+			<div class="posts PortSwap" id="swap1"> <!-- PORTF PAGE 2 -->
+				<div class="col-md-6 4">
+						<div class="post1">
+							<img src="Images/post4.jpg" alt="post1">
+							<h1>user experience</h1>
+						</div>
+				</div>
+				<div class="col-md-6 5and6">
+						<div class="post2">
+							<img src="Images/post5.jpg" alt="post2">
+							<h1>strategy</h1>
+						</div>
+						<div class="post3">
+							<img src="Images/post6.jpg" alt="post3">
+							<h1>website audit</h1>
+						</div>
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="img/favicon.png">
-        <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-114x114.png">
-
-        <!-- Google Fonts -->
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C300%7CLibre+Baskerville%3Aregular%2Citalic%2C700' type='text/css' media='all' />
-
-        <!-- Bootstrap CSS -->
-        <link rel='stylesheet' href='css/bootstrap.css' type='text/css' media='screen' />
-
-        <!-- Font Icon CSS -->
-        <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='screen' />
-
-        <!-- Owl Carousel Plugin CSS -->
-        <link rel='stylesheet' href='css/owl.carousel.css' type='text/css' media='screen' />
-
-        <!-- Lightbox Plugin CSS -->
-        <link rel='stylesheet' href='css/photoswipe.css' type='text/css' media='screen' />
-
-        <!-- Lightbox Plugin Skin CSS -->
-        <link rel='stylesheet' href='css/skin/photoswipe/default/default-skin.css' type='text/css' media='screen' />
-
-        <!-- Air. Theme Elements CSS -->
-        <link rel='stylesheet' href='css/pagebuild.css' type='text/css' media='screen' />
-
-        <!-- Air. Theme Main CSS -->
-        <link rel='stylesheet' href='css/style.css' type='text/css' media='screen' />
-
-        <!-- IE hack -->
-        <!--[if lte IE 9]>
-        <link rel='stylesheet' id='cssie9'  href='css/ie.css' type='text/css' media='screen' />
-        <![endif]-->
-
-        <!--[if lte IE 9]>
-        <script type="text/javascript" src="js/ie.js"></script>
-        <![endif]-->
-
-        <!--[if lte IE 8]>
-        <div style="width: 100%;" class="messagebox_orange">Your browser is obsolete and does not support this webpage. Please use newer version of your browser or visit <a href="http://www.ie6countdown.com/" target="_new">Internet Explorer 6 countdown page</a>  for more information. </div>
-        <![endif]-->
-
-    </head>
-
-    <body class="error404 default-dark-logo pswp-light-skin responsive-ux navi-hide dark-logo header-sticky preload">
-
-        <!--Page Loader-->
-        <div class="page-loading fullscreen-wrap visible">
-            <div class="page-loading-inn">
-                <div class="page-loading-transform">
-                    <div class="site-loading-logo"><img src="img/demo/logo-loading.png" alt="Christa Clark" /></div>
-                </div>
-            </div>
-        </div>
-
-        <!--Audio Player-->
-        <div id="jquery_jplayer" class="jp-jplayer"></div>
-
-        <!--Main wrap-->
-        <div id="wrap-outer" class="sparkle">
-            <!-- Main Content Wrap -->
-    		<div id="wrap">
-
-                <!-- Main Content : List, text content ... -->
-    	        <div id="content">
-
-                    <div class="content_wrap_outer">
-
-                        <div id="content_wrap" class="fourofour-wrap">
-
-                             <div class="container-inn">
-                                <h1>Welcome to Heartworthy!</h1>
-                                <p>We are not taking any new work right now, but please send us an <a href="mailto:christa@skunkworxlab.com" target="_blank">email</a> for any inquiries.</p>
-                            </div>
-
-                        </div><!-- End content_wrap-->
-
-                    </div><!-- End content_wrap_outer-->
-
-                </div><!--End #content-->
-
-                <footer id="footer" class="footer-cols-layout">
-
-                    <div class="container-fluid back-top-wrap"><div id="back-top"></div></div>
-
-                </footer>
-
-            </div><!--End #wrap -->
-
-           <div class="video-overlay modal"><span class="video-close"></span></div><!--end video-overlay-->
-
-        </div><!--End wrap-outer-->
-
-        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-            <div class="pswp__bg"></div>
-
-            <div class="pswp__scroll-wrap">
-
-                <div class="pswp__container">
-                    <div class="pswp__item"></div>
-                    <div class="pswp__item"></div>
-                    <div class="pswp__item"></div>
-                </div>
-
-                <div class="pswp__ui pswp__ui--hidden">
-
-                    <div class="pswp__top-bar">
-
-                        <div class="pswp__counter"></div>
-
-                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                        <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                        <div class="pswp__preloader">
-                            <div class="pswp__preloader__icn">
-                              <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                        <div class="pswp__share-tooltip"></div>
-                    </div>
-
-                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                    </button>
-
-                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                    </button>
-
-                    <div class="pswp__caption">
-                        <div class="pswp__caption__center"></div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- jQuery Library -->
-        <script type='text/javascript' src='js/library/jquery.min.js'></script>
-        <!-- Main Js Plugin -->
-        <script type='text/javascript' src='js/main.min.js'></script>
-        <!-- Air. Theme main js -->
-        <script type='text/javascript' src='js/custom.theme.js'></script>
-
-    </body>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="more">
+					<h2>More on</h2>
+					<ul>
+						<li><img src="Images/line3.jpg" alt=""></li>
+						<li><a href="http://christaclark.com" target="_blank">ChristaClark.com</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="contact">
+		<div class="bgtitle">
+			<h1>Contact</h1>
+		</div>
+		<div class="container">
+			<div class="col-md-12 page">
+				<h1>3</h1>
+				<h2><img src="Images/line.jpg" alt="">Contact</h2>
+			</div>
+			<div class="col-md-12 desc">
+				<p>
+					We want to know about you and your vision! We specialize in websites for startups, product launches, and conferences or events. Our kick-ass social media and marketing team will be able to give you an extra boost on getting your brand out there.
+				</p>
+			</div>
+			<!-- <div class="col-md-6 form">
+				<form action="">
+					<input type="text" name="mail" placeholder="mail">
+					<input type="text" name="name" placeholder="name">
+					<textarea name="message" placeholder="message"></textarea>
+					<button type="submit">SEND IT</button>
+				</form>
+			</div> -->
+			<div class="col-md-12 address">
+				<h3>
+					Visit at WeWork<br>
+					11801 Domain Blvd,<br>
+					3rd Floor,<br>
+					Austin, TX 78758
+				</h3>
+				<div class="social">
+					<ul>
+						<li><a href="https://twitter.com/ifyouGitit" target="_blank">TWITER</a></li>
+						<li><a href="https://github.com/christaclark" target="_blank">GITHUB</a></li>
+						<li><a href="mailto:christa@skunkworxlab.com" target="_blank">EMAIL</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
 </html>
