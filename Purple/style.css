@@ -103,7 +103,6 @@ a, a:hover, a:active {
 
 #home {
 	padding: 100px 0;
-	background-image: url(Images/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 1050px;
@@ -204,7 +203,7 @@ a, a:hover, a:active {
 	font-family: OpenSans_Regular;
 	color: white;
 	text-decoration: none;
-	font-size: 10pt;
+	font-size: 18px;
 	letter-spacing: 2px;
   	transition: all 0.2s;
   	-webkit-transition: all 0.2s;
@@ -282,7 +281,7 @@ a, a:hover, a:active {
 /* ABOUT -------------------------------------------------------------*/
 
 #about {
-	background-color: #38bef9;
+	background-color: #9bd6f1;
 	padding: 100px 0;
 	height: 1330px;
 	z-index: 2;
@@ -334,7 +333,7 @@ a, a:hover, a:active {
 
 #about .desc p {
 	font-family: OpenSans_Regular;
-	font-size: 10pt;
+	font-size: 18px;
 	line-height: 18pt;
 	letter-spacing: 1px;
 	color: white;
@@ -518,7 +517,7 @@ a, a:hover, a:active {
 
 #contact .desc p {
 	font-family: OpenSans_Regular;
-	font-size: 10pt;
+	font-size: 18px;
 	letter-spacing: 1px;
 	color: white;
 	max-width: 470px;
@@ -531,7 +530,7 @@ a, a:hover, a:active {
 
 #contact .form input {
 	font-family: OpenSans_Regular;
-	font-size: 10pt;
+	font-size: 18px;
 	color: white;
 	background: transparent;
 	border: 2px solid white;
@@ -545,7 +544,7 @@ a, a:hover, a:active {
 
 #contact .form textarea {
 	font-family: OpenSans_Regular;
-	font-size: 10pt;
+	font-size: 18px;
 	color: white;
 	background: transparent;
 	border: 2px solid white;
@@ -638,7 +637,7 @@ a, a:hover, a:active {
 		position: absolute;
 		top: -140px;
 	}
-	
+
 	#portfolio .more ul li a {
 		font-size: 16pt;
 	}
@@ -717,5 +716,3 @@ a, a:hover, a:active {
 		max-width: 90%;
 	}
 }
-
-
